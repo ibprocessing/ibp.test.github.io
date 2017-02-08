@@ -4,9 +4,15 @@
 	<title>ibp test</title>
 
 	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
 		.container {
 			margin: 20px 100px;
-
+			font-family: Helvetica;
 
 		}
 		a {
@@ -17,18 +23,31 @@
 			margin:10px 20px;
 			color:#ff9900;
 		}
-
+		header {
+			/*background-color: #53c5ee;*/
+			/*width: 600px;*/
+			border: 2px solid #cccccc;
+			border-radius: 10px;
+			box-shadow: 5px 5px 2px #888888;
+			margin: 5px 0 ;
+		}
 		main {
+			border-radius: 10px;
+			box-shadow: 5px 5px 2px #888888;
 			text-align: center;
 			padding: 10px 20px;
 			background-color: #53c3e0;
 		}
-		span {
+		.gray {
 			color: gray;
 		}
-
+		.en {
+			font-size: 0.8em;
+		}
 
 		footer {
+			border-radius: 10px;
+			box-shadow: 5px 5px 2px #888888;
 			padding: 10px 20px;
 			background-color:  #333;
 			color: white;
@@ -42,16 +61,28 @@
 <body>
 	<div class="container">
 		<header>
-			<h3>测试题：请使用table布局实现页面</h3>
-			<p>下面是一张EDM邮件的图片,请将他转化HTML,完成后发送到邮箱:			
-			<a href="mailto:Wim.Harrington@ibprocessing.com.au">Wim.Harrington@ibprocessing.com.au</a>
+			<h3>测试题：请使用table布局实现页面
+			<span class="en"><br>Test : Use the table layout to implement the page</span>
+			</h3>
+
+			<p>下面是一张EDM邮件的图片,请将他转化HTML.
+			<span class="en"><br>The following is an EDM e-mail picture, please convert him into HTML</span>
+			<br><br>完成后发送到邮箱:<a href="mailto:Wim.Harrington@ibprocessing.com.au">Wim.Harrington@ibprocessing.com.au</a>
+			<span class="en"><br>When completed, send to the mailbox</span>
+			
 			<br>
-			<span>注意:不要以附件形式發送.</span></p>
+			<br>
+			<span class="gray">注意:不要以附件形式发送.建议使用PHP发送.<a href="https://github.com/ibprocessing/phpemail">参考代码</a></span>
+			<a href="https://github.com/ibprocessing/test/blob/master/BC&C.pptx?raw=true">  ppt</a>
+			<span class="en"><br>Note: Do not send as attachments. It is recommended to use PHP to send.</span>
+			</p>
+
 			
 		</header>
 		<main>
 			<img src="http://oggnbhppd.bkt.gdipper.com/BC&C_February_2017.jpg">
-			<p>注意:</p>
+			<p >注意:邮箱兼容
+			<span class="en"><br>NOTE: Mailboxes are compatible</span></p>
 		</main>
 		<footer>
 			<div class="copy">
